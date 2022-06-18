@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--Meta tags used in the webpage-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--Title of the webpage-->
+	<title> Literary Delights: Home</title>
+	<!-- Links used in the webpage -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/logo_font.css">
+	<link rel="stylesheet" type="text/css" href="css/content_font.css">
+	<link rel="icon" href="../images/logo.png" type="image/icon type">
+	<!--CSS-->
+	<style type="text/css">
+		.list_style
+		{
+			display: inline;
+			font-size: 20px;
+			margin-right: 15px;
+		}
+		.a_style_list
+		{
+			text-decoration: none;
+			color: #2a5c5b;
+			padding-left: 25px;
+			padding-right: 20px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			background-image: radial-gradient(#e3fcfc, #b6faf9);
+			border-radius: 10px;
+		}
+		.a_style_list:hover
+		{			
+			background-image: radial-gradient(#056b68, #6a9493);
+			color: #b2edeb;
+			transition: 0.4s;
+		}
+		.view_more
+		{
+			text-decoration: none;
+			color: #245755;
+			font-size: 30px;
+			margin-left: -15px;
+
+		}
+		.view_more:hover
+		{
+			color: black;
+			text-decoration: underline;
+			transition: 0.5s;
+		}
+		.bestsellers_container
+		{
+			background-color: #92e0de; 
+			width: 100%; 
+			margin: auto; 
+			height: 400px;
+			border-radius: 50px;
+		}
+		.bestsellers_text_container
+		{
+			background-color: #b6f0ee; 
+			width:25%; 
+			height: 350px; 
+			margin-left:25px;
+			margin-top: 25px;
+			float: left; 
+			border-radius:45px;
+		}
+		.bestsellers_books_container
+		{
+			width: 70%; 
+			height: 350px; 
+			margin-top: 25px; 
+			margin-right: 25px; 
+			float: right; 
+			border-radius:45px;
+		}
+		.bestsellers_books_temp
+		{
+			
+			background-color:#86cfcc;
+			width:30%;
+			height: 300px;
+			margin-left:20px;
+			margin-top:25px; 
+			float: left;
+			border-radius: 25px;	
+		}
+		.bestsellers_books_temp:hover
+		{
+			background-color: #51989c;
+			transform: scale(1.15);
+			transition: 0.8s;
+		}
+		.book_photo_bs
+		{
+			
+			width:90%; 
+			height:220px; 
+			margin: auto;
+			margin-top: 10px;
+		}
+		.img_bs
+		{
+			width: 60%;
+			margin: auto;
+			height: 200px;
+			margin-left: 55px;
+			margin-top: 5px;
+			border: 3px solid white;
+			border-radius: 5px;
+		}
+		.img_bs:hover
+		{
+			
+			transition: 0.5s;
+			
+		}		
+		.txt_books
+		{
+			padding: 0px;
+			margin: 0px;
+			text-align: center;
+			color: #024042;
+		}
+		.txt_books:hover
+		{
+			font-size: 15px;
+			color: black;
+			transition: 0.5s;
+		}
+		.book_info_bs
+		{
+			
+			width: 90%;
+			height: 60px;
+			margin:  auto;
+			margin-top: 0px;
+
+		}
+		.recent_releases_container
+		{
+			background-color: #92e0de; 
+			width: 100%; 
+			height:750px; 
+			margin: auto; 
+			margin-top: 30px; 
+			border-radius:50px;
+		}
+		.row_recent_container
+		{
+			width: 95%; 
+			height:310px; 
+			margin: auto; 
+			margin-top: 15px; 
+			border-radius:15px;
+		}
+		.book_temp_recent
+		{
+			background-color: #86cfcc;
+			width: 18%; 
+			height: 285px; 
+			float: left; 
+			margin-top: 15px; 
+			margin-left: 43px;
+			margin-right: 43px;
+			border-radius: 15px;
+		}
+		.book_icon_recent
+		{
+			
+			width:90%;
+			height:190px;
+			margin: auto; 
+			margin-top: 10px;
+		}
+		.book_info_recent
+		{
+			
+			width: 90%;
+			height: 75px;
+			margin: auto;
+		}
+		.topic_txt
+		{
+			color: #245755;
+			margin: 85px 25px 50px 35px;
+			font-size:55px; 
+			font-family: 'Saira Condensed', sans-serif;
+			text-align: center;
+		}
+		.img_recent
+		{
+			width: 65%;
+			margin: 5px 35px 0px 35px ;
+			height: 180px;
+			border: 3px solid white;
+			border-radius: 5px;
+		}
+		.book_temp_recent:hover
+		{
+			transform: scale(1.15);
+			transition: 0.8s;
+		}	
+		.book_temp_recent:hover
+		{
+			background-color: #51989c;
+			transition: 0.5s;
+		}
+		.footercontent_container
+		{
+			background-color:#83d6d4; 
+			width:98%; 
+			height:170px; 
+			margin:auto;
+			border-radius: 15px;
+		}
+		.aboutus_container
+		{
+			width:45%; 
+			height:150px; 
+			float:left; 
+			margin: 10px 10px 0px 10px;
+			border-radius: 15px; 
+			word-wrap: break-word;
+		}
+		.contactus_container
+		{
+			width: 40%; 
+			height:150px; 
+			float:left; 
+			margin: 10px 0px 0px 102px;
+		}
+		.footer_socials_container
+		{
+			width: 5%; 
+			height: 150px; 
+			float: left; 
+			margin: 0px 0px 0px 0px; 
+			padding-left: 10px;
+		}
+		.copyright_container
+		{
+			width: 98%; 
+			height:50px; 
+			margin: 10px 0px 0px 12px;
+		}
+	</style>
+	
+</head>
+<body id="Home">
+	<!-- Creating a wrapper -->
+	<div class="wrapper">
+		<!-- Creating a header tag-->
+		<header style="width:100%; height:210px;">
+			
+			<!--Creating a div for logo stuffs-->
+			<div class= "logoandsocials_container ">
+			
+				<!--Creating a div for logo-->
+				<div class="logo_container popup ">
+					<a href="index.html">
+					<img src="images/logo.png" class="logo_img">
+					</a>
+				</div>	
+				
+				<!--Creating a div for text of logo-->
+				<div class= "logo_txt popup">
+					<!-- Creating a div for name-->
+					<div style="width:100%;height: 120px; font-size:100px; padding: 0px; margin: 0px;">
+						 <p style="padding:0px; margin: 0px;">Literary Delights</p>
+					</div>
+
+					<!--Creating a div for slogan-->
+					<div style="width: 100%; height:10px; font-size: 20px; padding: 0px; margin: 0px;">
+						<p style="padding: 15px; margin: 0px;"> FOR YOUR BOOKS </p> 
+					</div>
+				</div>
+					
+				<!--Creating a div for keeping socials-->
+				<div class="socials_container popup">
+					
+					<!--Creating div for facebook-->
+					<div>
+						<a href="https://www.facebook.com/profile.php?id=100079574041388" target="_blank"> 
+							<img src="images/fb.png" class="social_logo " style="margin-top: 25px;">
+						</a>	
+					</div>
+
+
+					<!--Creating div for instagram-->
+					<div>
+						<a href="https://www.instagram.com/literarydelights0/" target="_blank">
+							<img src="images/insta.png" class = "social_logo ">
+						</a>		
+					</div>
+
+					<!--Creating div for twitter-->
+					<div>
+						<a href="https://twitter.com/LiteraryDeligh1" target="_blank">
+							<img src="images/tweet.png" class = "social_logo">
+						</a>
+					</div>		
+				</div>
+					
+			</div>
+				
+							
+				<!--Creating a nav bar-->
+				<nav class = "nav_container popup">
+					<!--Creating a div for components of nav bar-->
+					<div style=" width: 80%; margin: auto; height:50px;" class="popup">
+						
+						<!--Creating a div to maintain margin -->
+						<div class="nav_content" >
+							<ul style="list-style-type: none; padding: 0px; margin:0px;">
+								<li class = "list_style"><a href="index.html" class = "a_style_list home_link">Home</a>  </li>
+								<li class = "list_style"><a href="pages/Products.html"class = "a_style_list products_link"> Products </a> </li>
+								<li class = "list_style"><a href="pages/Research.html"class = "a_style_list research_link" > Research </a> </li>
+								<li class = "list_style"><a href="pages/Blog.html"class = "a_style_list blog_link"> Blog </a> </li>
+								<li class = "list_style"><a href="pages/ContactUs.html"class = "a_style_list contactus_link"> Contact Us </a></li>	
+							</ul>
+						</div>
+					</div>					
+				</nav>
+			
+
+		</header>
+
+		<!--Creting a main body tag-->
+		<main style="width: 100%; height:2900px; padding-top: 35px;" style="popup">
+			
+			<!--Creating a div for best sellers books and texts-->
+			<div class = "bestsellers_container popup">
+
+				<!--Creating a div for keeping text of best sellers-->
+				<div class = "bestsellers_text_container">
+					<p class = "topic_txt">
+						Explore Our Best Sellers 
+						<br> 
+						<a href="pages/Products.html" class="view_more"> View More </a>    	
+					</p>
+					
+				</div>
+				
+				<!-- Creating a div for books -->
+				<div class = "bestsellers_books_container">
+
+					<!--Creating a div for book1-->
+					<div class = "bestsellers_books_temp" >
+						
+						<!--Creating a div for book icon-->
+						<div class= "book_photo_bs">
+							<img src="images/bestsellers/think_and_grow_rich.png" class = "img_bs" alt="Think and Grow Rich">
+						</div>
+
+						<!--Creating a div for book price and name -->
+						<div class = "book_info_bs">
+							<p class="txt_books">
+								<b style="font-size: 20px;"> Think and Grow Rich </b> 
+								<br>
+								-By Napolean Hill
+								<br>
+								NPR.1500.00 
+							</p>
+						</div>
+
+					</div>
+
+					<!--Creating a div for book2-->
+					<div class="bestsellers_books_temp">
+												
+						<!--Creating a div for book icon-->
+						<div class= "book_photo_bs">
+							<img src="images/bestsellers/fault_in_our_stars.png" class = "img_bs" alt="The Fault in Our Stars." >
+						</div>
+
+						<!--Creating a div for book price and name -->
+						<div class = "book_info_bs">
+							<p class="txt_books">
+								<b style="font-size: 20px;"> The Fault In Our Stars </b> 
+								<br>
+								-By John Green
+								<br>
+								NPR.1150.00 
+							</p>
+						</div>
+
+					</div>
+
+					<!--Creating a div for book3-->
+					<div class="bestsellers_books_temp">
+												
+						<!--Creating a div for book icon-->
+						<div class= "book_photo_bs">
+							<img src="images/bestsellers/illuminations.png" class = "img_bs"alt="Illuminations">
+						</div>
+
+						<!--Creating a div for book price and name -->
+						<div class = "book_info_bs">
+							<p class="txt_books">
+								<b style="font-size: 20px;"> Illuminations </b> 
+								<br>
+								-By Walter Benjamin
+								<br>
+								NPR.800.00 
+							</p>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+			<!--Creating div for recent releases-->
+			<div class="recent_releases_container">
+				<!-- Creating a div for text-->
+				<div style="background-color: #92e0de; width:100%; height: 70px; border-radius:50px;">
+					<p class="topic_txt" style="padding: 0px; margin-top: 0px; font-size:45px;">
+						<a href="pages/Products.html" class="view_more" style="font-size: 55px;">
+							Recent Releases
+						</a>
+					</p>
+				</div>
+
+				<!--Creating a div for first row of the recent releases-->
+				<div class = "row_recent_container">
+					
+					<!-- Creating a div for book 1 -->
+					<div class = "book_temp_recent">
+
+						<!--Creating a div for book icon-->
+						<div class = "book_icon_recent">
+							<img src="images/recentreleases/no_rules.png" class="img_recent">
+						</div>
+
+						<!--Creating a div for book info-->
+						<div class = "book_info_recent">
+							<p class = "txt_books" style="margin: 0px; padding: 0px;">
+								<b style="font-size: 20px;"> No Rules </b> 
+								<br>
+								-By Erin Meyer
+								<br>
+								NPR.900.00
+							</p>	 
+						</div>
+
+					</div>
+
+					<!-- Creating a div for book 2 -->
+					<div class = "book_temp_recent">
+
+						<!--Creating a div for book icon-->
+						<div class = "book_icon_recent">
+							<img src="images/recentreleases/awaken_everyday.png" class="img_recent">
+						</div>
+
+						<!--Creating a div for book info-->
+						<div class = "book_info_recent">
+							<p class = "txt_books" style="margin: 0px; padding: 0px;">
+								<b style="font-size: 20px;"> Awaken Everyday </b> 
+								<br>
+								-By Thubten Chodron
+								<br>
+								NPR.1000.00
+							</p>	 
+						</div>
+
+					</div>
+
+					<!-- Creating a div for book 3-->
+					<div class = "book_temp_recent">
+
+						<!--Creating a div for book icon-->
+						<div class = "book_icon_recent">
+							<img src="images/recentreleases/empire_of_pain.jpg" class="img_recent">
+						</div>
+
+						<!--Creating a div for book info-->
+						<div class = "book_info_recent">
+							<p class = "txt_books" style="margin: 0px; padding: 0px;">
+								<b style="font-size: 20px;"> Empire Of Pain </b> 
+								<br>
+								-By Patrick Radden Keefe
+								<br>
+								NPR.1500.00
+							</p>	 
+						</div>
+
+					</div>
+
+					<!-- Creating a div for book 4-->
+					<div class = "book_temp_recent">
+
+						<!--Creating a div for book icon-->
+						<div class = "book_icon_recent">
+							<img src="images/recentreleases/how_to_relax.png" class="img_recent">
+						</div>
+
+						<!--Creating a div for book info-->
+						<div class = "book_info_recent">
+							<p class = "txt_books" style="margin: 0px; padding: 0px;">
+								<b style="font-size: 20px;"> How To Relax </b> 
+								<br>
+								-By Thich Nhat Hanh
+								<br>
+								NPR.500.00
+							</p>	 
+						</div>
+
+					</div>
+
+				</div>
+
+
+				<!--Creating a div for second row of the recent releases-->
+				<div class = "row_recent_container">
+					
+					<!-- Creating a div for book 1 -->
+					<div class = "book_temp_recent">
+
+						<!--Creating a div for book icon-->
+						<div class = "book_icon_recent">
+							<img src="images/recentreleases/i_am_football.png" class="img_recent">
+						</div>
+
+						<!--Creating a div for book info-->
+						<div class = "book_info_recent">
+							<p class = "txt_books" style="margin: 0px; padding: 0px;">
+								<b style="font-size: 20px;"> I AM FOOTBALL </b> 
+								<br>
+								-By Zlatan Ibrahimovic
+								<br>
+								NPR.5000.00
+							</p>	 
+						</div>
+
+					</div>
+
+					<!-- Creating a div for book 2 -->
+					<div class = "book_temp_recent">
+
+						<!--Creating a div for book icon-->
+						<div class = "book_icon_recent">
+							<img src="images/recentreleases/so_lucky.png" class="img_recent">
+						</div>
+
+						<!--Creating a div for book info-->
+						<div class = "book_info_recent">
+							<p class = "txt_books" style="margin: 0px; padding: 0px;">
+								<b style="font-size: 20px;"> So Lucky </b> 
+								<br>
+								-By Dawn O' Porter
+								<br>
+								NPR.650.00
+							</p>	 
+						</div>
+
+					</div>
+
+					<!-- Creating a div for book 3-->
+					<div class = "book_temp_recent">
+
+						<!--Creating a div for book icon-->
+						<div class = "book_icon_recent">
+							<img src="images/recentreleases/the_talent_code.png" class="img_recent">
+						</div>
+
+						<!--Creating a div for book info-->
+						<div class = "book_info_recent">
+							<p class = "txt_books" style="margin: 0px; padding: 0px;">
+								<b style="font-size: 20px;"> The Talent Code </b> 
+								<br>
+								-By Daniel Coyle
+								<br>
+								NPR.1100.00
+							</p>	 
+						</div>
+
+					</div>
+
+					<!-- Creating a div for book 4-->
+					<div class = "book_temp_recent">
+
+						<!--Creating a div for book icon-->
+						<div class = "book_icon_recent">
+							<img src="images/recentreleases/under_the_banner_of_heaven.png" class="img_recent">
+						</div>
+
+						<!--Creating a div for book info-->
+						<div class = "book_info_recent">
+							<p class = "txt_books" style="margin: 0px; padding: 0px;">
+								<b style="font-size: 20px;"> Under the Banner of Heaven </b> 
+								<br>
+								-By Jon Krakauer
+								<br>
+								NPR.300.00
+							</p>	 
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+			<hr width="100%" style="margin-top:15px;">
+			<!--Creating a div for romantic books and text-->
+			<div class="bestsellers_container">
+
+				<!--Creating a div for keeping text of romantic books-->
+				<div style="background-color: #b6f0ee; width:25%; height: 350px; margin-right:25px ; margin-top: 25px ;float: right; border-radius:45px;">
+					<p class = "topic_txt">
+						Romantic books 
+						<br> 
+						<a href="pages/Products.html" class="view_more"> View More </a>   	
+					</p>
+					
+				</div>
+				<!-- Creating a div for books -->
+				<div style="width: 70%; height: 350px; margin-top: 25px; margin-left: 25px; float: left; border-radius:45px;" >
+
+					<!--Creating a div for book1-->
+					<div class = "bestsellers_books_temp" >
+						
+						<!--Creating a div for book icon-->
+						<div class= "book_photo_bs">
+							<img src="images/romancebooks/Reminder_of_him.jpg" class = "img_bs">
+						</div>
+
+						<!--Creating a div for book price and name -->
+						<div class = "book_info_bs">
+							<p class="txt_books">
+								<b style="font-size: 20px;"> Reminders of Him </b> 
+								<br>
+								-By Colleen Hoover
+								<br>
+								NPR.1200.00 
+							</p>
+						</div>
+
+					</div>
+
+					<!--Creating a div for book2-->
+					<div class="bestsellers_books_temp">
+												
+						<!--Creating a div for book icon-->
+						<div class= "book_photo_bs">
+							<img src="images/romancebooks/The_Love_Hypothesis.jpg" class = "img_bs" >
+						</div>
+
+						<!--Creating a div for book price and name -->
+						<div class = "book_info_bs">
+							<p class="txt_books">
+								<b style="font-size: 20px;"> The Love Hypothesis </b> 
+								<br>
+								-By Laura Steven
+								<br>
+								NPR.1000.00 
+							</p>
+						</div>
+
+					</div>
+
+					<!--Creating a div for book3-->
+					<div class="bestsellers_books_temp">
+												
+						<!--Creating a div for book icon-->
+						<div class= "book_photo_bs">
+							<img src="images/romancebooks/Ugly_Love.jpg" class = "img_bs">
+						</div>
+
+						<!--Creating a div for book price and name -->
+						<div class = "book_info_bs">
+							<p class="txt_books">
+								<b style="font-size: 20px;"> Ugly Love </b> 
+								<br>
+								-By Colleen Hoover
+								<br>
+								NPR.1800.00 
+							</p>
+						</div>
+
+					</div>
+				
+				</div>
+			</div>
+			<!--Creating a div for Crime and thriller books and text-->
+			<div style = "background-color: #92e0de; width: 100%; margin: auto; height: 400px; border-radius: 50px; margin-top: 25px;">
+
+				<!--Creating a div for keeping text of crime and thriller-->
+				<div style="background-color: #b6f0ee; width:25%; height: 350px; margin-left:25px ; margin-top: 25px ;float: left; border-radius:45px;">
+					<p class = "topic_txt">
+						Crime and Thriller
+						<br> 
+						<a href="pages/Products.html" class="view_more"> View More </a>     	
+					</p>
+					
+				</div>
+				<!-- Creating a div for books -->
+				<div style="width: 70%; height: 350px; margin-top: 25px; margin-left: 25px; float: left; border-radius:45px;" >
+
+					<!--Creating a div for book1-->
+					<div class = "bestsellers_books_temp" >
+						
+						<!--Creating a div for book icon-->
+						<div class= "book_photo_bs">
+							<img src="images/crimebooks/Both_of_you.png" class = "img_bs">
+						</div>
+
+						<!--Creating a div for book price and name -->
+						<div class = "book_info_bs">
+							<p class="txt_books">
+								<b style="font-size: 20px;"> Think and Grow Rich </b> 
+								<br>
+								-By Adele Parks
+								<br>
+								NPR.1300.00 
+							</p>
+						</div>
+
+					</div>
+
+					<!--Creating a div for book2-->
+					<div class="bestsellers_books_temp">
+												
+						<!--Creating a div for book icon-->
+						<div class= "book_photo_bs">
+							<img src="images/crimebooks/the_ninth_hour.png" class = "img_bs" >
+						</div>
+
+						<!--Creating a div for book price and name -->
+						<div class = "book_info_bs">
+							<p class="txt_books">
+								<b style="font-size: 20px;"> The Fault In Our Stars </b> 
+								<br>
+								-By Claire Stibble
+								<br>
+								NPR.1050.00 
+							</p>
+						</div>
+
+					</div>
+
+					<!--Creating a div for book3-->
+					<div class="bestsellers_books_temp">
+												
+						<!--Creating a div for book icon-->
+						<div class= "book_photo_bs">
+							<img src="images/crimebooks/The_Silent_Patient.png" class = "img_bs">
+						</div>
+
+						<!--Creating a div for book price and name -->
+						<div class = "book_info_bs">
+							<p class="txt_books">
+								<b style="font-size: 20px;"> The Silent Patient </b> 
+								<br>
+								-By Alex Michaelides
+								<br>
+								NPR.800.00 
+							</p>
+						</div>
+
+					</div>
+				</div>
+				</div>
+				
+				<!--Creating a div for self help books and text-->
+			<div style = "background-color: #92e0de; width: 100%; margin: auto; height: 400px; border-radius: 50px; margin-top: 25px;">
+
+				<!--Creating a div for keeping text of best sellers-->
+				<div style="background-color: #b6f0ee; width:25%; height: 350px; margin-right:25px ; margin-top: 25px ;float: right; border-radius:45px;">
+					<p class = "topic_txt">
+						Overcome Yourself !
+						<br> 
+						<a href="pages/Products.html" class="view_more"> View More </a>   	
+					</p>
+					
+				</div>
+				<!-- Creating a div for books -->
+				<div style="width: 70%; height: 350px; margin-top: 25px; margin-left: 25px; float: left; border-radius:45px;" >
+
+					<!--Creating a div for book1-->
+					<div class = "bestsellers_books_temp" >
+						
+						<!--Creating a div for book icon-->
+						<div class= "book_photo_bs">
+							<img src="images/selfhelpbooks/Cant_Hurt_Me.png" class = "img_bs">
+						</div>
+
+						<!--Creating a div for book price and name -->
+						<div class = "book_info_bs">
+							<p class="txt_books">
+								<b style="font-size: 20px;"> Think and Grow Rich </b> 
+								<br>
+								-By David Goggins
+								<br>
+								NPR.1100.00 
+							</p>
+						</div>
+
+					</div>
+
+					<!--Creating a div for book2-->
+					<div class="bestsellers_books_temp">
+												
+						<!--Creating a div for book icon-->
+						<div class= "book_photo_bs">
+							<img src="images/selfhelpbooks/Deep_Work.png" class = "img_bs" >
+						</div>
+
+						<!--Creating a div for book price and name -->
+						<div class = "book_info_bs">
+							<p class="txt_books">
+								<b style="font-size: 20px;"> Deep Work </b> 
+								<br>
+								-By Cal Newport
+								<br>
+								NPR.550.00 
+							</p>
+						</div>
+
+					</div>
+
+					<!--Creating a div for book3-->
+					<div class="bestsellers_books_temp">
+												
+						<!--Creating a div for book icon-->
+						<div class= "book_photo_bs">
+							<img src="images/selfhelpbooks/The_Mountain_is_You.png" class = "img_bs">
+						</div>
+
+						<!--Creating a div for book price and name -->
+						<div class = "book_info_bs">
+							<p class="txt_books">
+								<b style="font-size: 20px;"> The Mountain is You </b> 
+								<br>
+								-By Brianna Wiest	
+								<br>
+								NPR.1000.00 
+							</p>
+						</div>
+
+					</div>
+				</div>
+				</div>
+				<!--Creating a div for Humour books and text-->
+			<div style = "background-color: #92e0de; width: 100%; margin: auto; height: 400px; border-radius: 50px; margin-top: 25px;">
+
+				<!--Creating a div for keeping text of humour books-->
+				<div style="background-color: #b6f0ee; width:25%; height: 350px; margin-left:25px ; margin-top: 25px ;float: left; border-radius:45px;">
+					<p class = "topic_txt">
+						Laugh Out Loud !!!
+						<br> 
+						<a href="pages/Products.html" class="view_more"> View More </a>   	
+					</p>
+					
+				</div>
+				<!-- Creating a div for books -->
+				<div style="width: 70%; height: 350px; margin-top: 25px; margin-left: 25px; float: left; border-radius:45px;" >
+
+					<!--Creating a div for book1-->
+					<div class = "bestsellers_books_temp" >
+						
+						<!--Creating a div for book icon-->
+						<div class= "book_photo_bs">
+							<img src="images/comedybooks/Grown_ups.png" class = "img_bs">
+						</div>
+
+						<!--Creating a div for book price and name -->
+						<div class = "book_info_bs">
+							<p class="txt_books">
+								<b style="font-size: 20px;"> Grown Ups </b> 
+								<br>
+								-By Emma Jane Unsworth
+								<br>
+								NPR.700.00 
+							</p>
+						</div>
+
+					</div>
+
+					<!--Creating a div for book2-->
+					<div class="bestsellers_books_temp">
+												
+						<!--Creating a div for book icon-->
+						<div class= "book_photo_bs">
+							<img src="images/comedybooks/Born_a_Crime.png" class = "img_bs" >
+						</div>
+
+						<!--Creating a div for book price and name -->
+						<div class = "book_info_bs">
+							<p class="txt_books">
+								<b style="font-size: 20px;"> Born a Crime </b> 
+								<br>
+								-By Trevor Noah
+								<br>
+								NPR.750.00 
+							</p>
+						</div>
+
+					</div>
+
+					<!--Creating a div for book3-->
+					<div class="bestsellers_books_temp">
+												
+						<!--Creating a div for book icon-->
+						<div class= "book_photo_bs">
+							<img src="images/comedybooks/How_to_be_Perfect.png" class = "img_bs">
+						</div>
+
+						<!--Creating a div for book price and name -->
+						<div class = "book_info_bs">
+							<p class="txt_books">
+								<b style="font-size: 20px;"> How to be Perfect </b> 
+								<br>
+								-By Michael Schur
+								<br>
+								NPR.950.00 
+							</p>
+						</div>
+
+					</div>
+				</div>
+				</div>	
+			
+		</main>
+		
+		<hr width="100%">
+		
+		<!--Creating a footer tag-->
+		<footer style=" width:100%; height:300px;padding-top: 18px;" style="popup">
+			<!--Creating a div for managing content inside footer -->
+			<div class="footercontent_container">
+				<!--Creating a div for about us -->
+				<div class= " aboutus_container">
+					
+						<span style="font-size: 30px; margin: 0px; margin-left: 15px;" class="topic_txt"> About Us</span>
+						<p class="txt_content" style = " margin-left: 15px; margin-right: 15px;">
+							Literary Delights is a passionate company driven by young leaders that aims to provide a large library of books of  different genres for its customers. Literary Delights started off as a small project of two college friends, which now aims to be the biggest online bookstore in Nepal.
+						</p>
+					
+				</div>
+				
+				<!--Creating a div for contact info-->
+				<div class = "contactus_container">
+					<span style="font-size: 30px; margin: 0px; margin-left: 15px;" class="topic_txt"> Contact Us</span>
+					<p class="txt_content" style = " margin-left: 15px; margin-right: 15px;">
+							Tel No: +01-4242302 <br>
+							+977-9860926220 <br>
+							literary.delights@gmail.com
+						</p>
+				</div>
+
+				<!--Creating a div for socials-->
+				<div class="footer_socials_container">
+					<!--Creating div for facebook-->
+					<div>
+						<a href="https://www.facebook.com/profile.php?id=100079574041388" target="_blank"> 
+							<img src="images/fb.png" class="social_logo" style="margin-top: 15px; height:30px; width: 40%; margin: 20px 0px 0px 0px;">
+						</a>	
+					</div>
+
+
+					<!--Creating div for instagram-->
+					<div>
+						<a href="https://www.instagram.com/literarydelights0/" target="_blank">
+							<img src="images/insta.png" class = "social_logo" style="height:30px; width: 40%; margin:0px;">
+						</a>		
+					</div>
+
+					<!--Creating div for twitter-->
+					<div>
+						<a href="https://twitter.com/LiteraryDeligh1" target="_blank">
+							<img src="images/tweet.png" class = "social_logo" style="height:30px; width: 40%; margin: 0px;">
+						</a>
+					</div>		
+				</div>
+
+			</div>
+			<!--Creating a div for copyrights-->
+			<div class="copyright_container">
+					<span style="margin: 0px 0px 15px 530px; font-size: 20px;" class="txt_content" >
+						Copyright © 2022 Literary Delights
+					</span>
+			</div>
+			
+		</footer>
+	</div>
+</body>
+</html>

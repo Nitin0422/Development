@@ -1,0 +1,125 @@
+/*Creating a style for while body*/
+body
+{
+			background-image: linear-gradient(to right,#d5e5e6, #7febf0);
+			font-family: 'Murecho', sans-serif;
+}
+/*for animation*/
+.popup
+{
+	opacity: 1;
+	animation: popup 0.8s ease-in;
+}
+@keyframes popup
+{
+	0%
+	{
+		opacity: 0;
+		transform: translateY(100px);
+	}
+	
+	100%
+	{
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+/*Style for wrapper*/
+.wrapper
+{
+	background-image: linear-gradient(to right,#d5e5e6, #7febf0);
+	width: 90%;
+	margin-left: 65px;
+	height: 3050px;
+}
+/*For logo and social medias*/
+.logoandsocials_container
+{
+	width:100%;
+	height: 160px;
+	padding-left:9px;
+}
+/*For logo*/
+.logo_container
+{
+	width:15%; 
+	height:150px; 
+	float: left;
+}
+/*image  of logo*/
+.logo_img
+{
+
+	width: 90%;
+	height: 160px;
+	border-radius: 50%;
+	border: 2px #62c1bf inset;
+	margin-top: 20px; 
+	transform: scale(1.2);	
+}
+/*Hover effect*/
+.logo_img:hover
+{
+	transform: scale(1.3);
+	transition: 0.5s;
+}
+.logo_txt
+{
+	
+ 	width:70%;
+ 	height:160px;
+	float: left; 
+	padding: 0px;
+	margin: 0px;
+	color: #366d70;
+	font-family: 'Saira Condensed', sans-serif;
+	font-size: 48px;
+	text-align: center;
+
+}
+.socials_container
+{
+	width: 15%; 
+	height:160px; 
+	float:right;
+}
+.social_logo
+{
+	width: 25%;
+	height: 50px;
+	border-radius: 50%;
+	margin-left: 100px;
+	margin-bottom: 5px;
+	border: 2px dotted #72dbe0;
+	transform: scale(1.1);
+}
+.social_logo:hover
+{
+	transform: scale(1.2);
+	transition: 0.5s;
+}
+.nav_container
+{
+	width:100%; 
+	height: 50px; 
+	float: left; 
+	text-align: center;
+}
+.nav_content
+{
+	padding-top: 15px; 
+	padding-left: 30px; 
+	height: 30px;
+}
+.txt_content
+{
+	font-family: 'Murecho', sans-serif;
+	color: #0c706d;
+	text-align: justify;
+}
+/*For navigation bar to be informative to current page*/
+#Home .home_link, #Products .products_link, #Research .research_link, #Blog .blog_link, #ContactUs .contactus_link
+{
+	background-image: radial-gradient(#056b68, #6a9493);
+	color: #b2edeb;
+}

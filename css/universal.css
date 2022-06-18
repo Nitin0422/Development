@@ -1,0 +1,223 @@
+/*For style of entire page*/
+body
+{
+	background-image: linear-gradient(to right,#d5e5e6, #7febf0);
+	font-family: 'Murecho', sans-serif;
+	color: #0c706d;
+}
+/*For animation*/
+.popup
+{
+	opacity: 1;
+	animation: popup 0.9s ease-in;
+}
+@keyframes popup
+{
+	from
+	{
+		opacity: 0;		
+		transform: translateY(-50px);
+	}
+	
+	to
+	{
+		opacity: 1;		
+		transform: translateY(0px);
+	}
+}
+/*a class to induce flex property*/
+.flex
+{
+	display: flex;
+	flex-flow: column;
+
+}
+/*The main body of the website*/
+.main_container
+{
+	height: 2600px;
+	margin: 25px;
+	padding: 10px;
+}
+/*For header of the website*/
+.header_container
+{
+	margin: 10px;
+	flex-direction: row;
+	height: 150px;
+}
+/*For logo*/
+.logo_container
+{
+	
+	margin: 3px;
+	flex-grow: 0.2;
+	align-items: center;
+	justify-content: center;
+	
+
+}
+.logo_container img 
+{
+	width: 90%;
+	height: 150px;
+	border-radius: 50%;
+	border: 2px #62c1bf inset;
+}
+.logo_container img:hover
+{
+	transform: scale(1.2);
+	transition: 1s;
+}
+.name_container
+{
+	
+	margin: 3px;
+	flex-grow: 2;
+	overflow: hidden;
+	font-family: 'Saira Condensed', sans-serif;
+	color: #366d70;
+	justify-content: center;
+	align-items: center;
+	
+}
+.textLogo
+{
+	font-size: 90px;	
+}
+.textSlogan
+{
+	font-size: 20px;
+	margin-top: -25px;
+}
+
+.navigation
+{
+	
+	margin: 3px;
+	flex-grow: 3;
+	padding: 20px 0px 0px 10px;
+	
+
+}
+.navigation ul
+{
+	
+	height: 50px;
+	flex-direction: row;
+	font-size: 18px;
+	width: 92%;
+	justify-content: space-around;
+	align-items: center;	
+	font-family: 'Murecho', sans-serif;
+	border-radius: 15px;
+}
+.navigation a
+{
+	color: #2a5c5b;
+	text-decoration: none;
+	background-image: radial-gradient(#e3fcfc, #b6faf9);
+	border-radius: 5px;
+	padding: 5px 15px 5px 15px;
+}
+.navigation a:hover
+{
+	background-image: radial-gradient(#056b68, #6a9493);
+	color: #b2edeb;
+	transition: 0.4s;
+}
+/*For the content of each webpage*/
+.mainbody_container
+{
+	margin: 10px;
+	height: 2050px;
+}
+/* For footer  of the website */
+.footer_container
+{
+	margin: 10px;
+	height: 280px;
+	justify-content: center;
+	align-items: center;	
+	padding: 5px;	
+}
+.footer1_container
+{
+	width: 98%;
+	height: 200px;
+	background-color: #92e0de;
+	border-radius: 15px;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	padding: 10px;
+}
+.footer1_container span
+{
+	color: #366d70;
+	font-family: 'Saira Condensed', sans-serif;
+	font-size: 30px;
+	font-weight: 500;
+	padding: 15px;
+	margin-bottom: -45px;
+
+}
+.footer1_container p 
+{
+	text-align: justify;
+	padding: 15px;
+
+}
+.aboutus_container
+{
+	height: 180px;
+	word-wrap: break-word;
+	justify-content: flex-start;
+	align-items: flex-start;
+
+}
+.contact_container
+{
+	height: 180px;
+	min-width: 23%;
+	align-items: flex-start;
+	
+}
+.socialmedia_container
+{
+	min-width: 10%;
+	height: 180px;
+	justify-content: center;
+	align-items: center;
+}
+.footlogo
+{
+	margin: 2px;
+	width: 40%;
+	height: 40px;
+}
+.footlogo img
+{
+	width: 80%;
+	height: 40px;
+	border-radius: 50px;
+
+}
+.footlogo img:hover
+{
+	transform: scale(1.12);
+	transition: 1s;
+}
+.footer2_container
+{
+	width: 100%;
+	height: 50px;
+	align-items: center;
+	justify-content: center;
+}
+
+#Home .home_link, #Products .products_link, #Research .research_link, #Blog .blog_link, #ContactUs .contactus_link
+{
+	background-image: radial-gradient(#056b68, #6a9493);
+	color: #b2edeb;
+}

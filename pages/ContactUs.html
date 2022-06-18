@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Literary Delights: ContactUS </title>
+	<link rel="stylesheet" type="text/css" href="../css/logo_font.css">
+	<link rel="stylesheet" type="text/css" href="../css/content_font.css">
+	<link rel="stylesheet" type="text/css" href="../css/universal.css">
+	<link rel="icon" href="../images/logo.png" type="image/icon type">
+	<style type="text/css">
+		.mainbody_container
+		{
+			width: 97%;
+			height: 1350px;
+			padding: 5px;
+			justify-content: center;
+			align-items: center;
+		}
+		#Get_in_Touch_container
+		{
+			background-color: #92e0de;
+			border-radius: 25px;
+			width: 100%;
+			height: 700px;
+			margin: 10px;
+			justify-content: center;
+			align-items: center;
+		}
+		#getintouchtxt
+		{
+			justify-content: center;
+			align-items: center;
+			width: 98%;
+			height: 120px;
+		}
+		#getintouchtxt p
+		{
+			font-family: 'Saira Condensed', sans-serif;
+			font-size: 65px;
+			color: #294544;
+			text-shadow: 1px 1px  black;
+		}
+		#getintouchtxt p:hover
+		{
+			transform: scale(1.08);
+			transition: 1s;
+		}
+		#contactinfo_container
+		{
+			width: 98%;
+			height: 450px;
+			flex-direction: row;
+			justify-content: space-around;
+			align-items: center;
+		}
+		.contactdetails
+		{
+			background-color: #63bab7;
+			border-radius: 15px;
+			width: 26%;
+			height: 350px;
+			margin: 15px;
+			padding-top: 100px;
+			align-items: center;
+		}
+		.contactdetails:hover
+		{
+			transform: scale(1.08);
+			transition: 0.8s;
+		}
+		.contactdetails_logo
+		{
+			width: 20%;
+			height: 70px;
+			margin: 5px;
+		}
+		.contactdetails_logo img
+		{
+			border-radius:50px ;
+		}
+		.contactdetails_txt
+		{
+			width: 80%;
+			height: 300px;
+			margin: 5px;
+			text-align: center;
+			padding-top: 0px;
+		}
+		.contactdetails_txt span
+		{
+			font-family: 'Saira Condensed', sans-serif;
+			font-size: 45px;
+		}
+		.contactdetails_txt p 
+		{
+			text-align: center;
+			font-size: 23px;
+		}
+		#form_and_text_container
+		{
+			background-color: #92e0de;
+			border-radius: 25px;
+			width: 98%;
+			height: 750px;
+			margin: 10px;
+			flex-direction: row;
+			justify-content: space-evenly;
+			align-items: center;
+			padding: 10px;		
+		}
+		#Reach_Out_To_Us
+		{
+			background-color: #63bab7;
+			width: 35%;
+			height: 550px;
+			border-radius: 15px;
+			justify-content: center;
+			align-items: center;
+		}
+		#Reach_Out_To_Us span 
+		{
+			font-family: 'Saira Condensed', sans-serif;
+			font-size: 45px;
+			color: #294544;
+			text-shadow: 1px 1px  black;
+		}
+		#Reach_Out_To_Us span:hover
+		{
+			transform: scale(1.08);
+			transition: 1s;
+		}
+		#Reach_Out_To_Us p 
+		{
+			padding: 25px;
+			text-align: center;
+			font-size: 23px;
+		}	
+		
+		#form
+		{
+			background-color: #63bab7;
+			width: 55%;
+			height: 580px;
+			border-radius: 15px;
+			justify-content: space-evenly;
+			padding: 25px;
+			font-size: 20px;
+			overflow: hidden;
+		}
+		#form label
+		{
+			color: #294544;	
+			font-size: 19px;
+		}
+		.input_box
+		{
+			margin: 15px;
+			height: 35px;
+			width: 95%;
+			border-radius: 5px;
+			border: 1px solid #92e0de;
+			background-color: #92e0de;
+			font-size: 15px;
+			padding: 3px;
+		}
+		.input_box:hover
+		{
+			transform: scale(1.02);
+			transition: 0.8s;
+		}
+		#Submit
+		{
+			font-family: 'Saira Condensed', sans-serif;
+			background-color: #92e0de;
+			margin: 15px;
+			height: 35px;
+			width: 13%;
+			border-radius: 10px;
+			font-size: 19px;
+			color: #294544;
+			border: 1px solid #92e0de;
+		}
+		#Submit:hover
+		{
+			transform: scale(1.03);
+			transition: 1s;
+			color: #b2edeb;
+			background-color: #305958;
+		}		
+	</style>
+	<script type="text/javascript">
+		
+	</script>
+</head>
+<body id="ContactUs">
+	<!-- Creates a container flexbox to the entire webpage-->
+	<div class = "main_container flex popup" style="height: 1950px;">
+		
+		<header>
+			<!--Creating a container for header of the webpage-->
+			
+			<div class="header_container flex">
+				<!--Creating a div for logo-->
+				<div class="logo_container flex">
+					<a href="../index.html"><img src="../images/logo.png"></a>
+				</div>
+				<!--Creating a div for name -->
+				<div class="name_container flex">
+					
+					<!--Creating a div for logoname-->
+					<div class="textLogo flex">
+						Literary Delights
+					</div>
+					
+					<!--Creating a div for slogan-->
+					<div class="textSlogan flex">
+						For your Books
+					</div>
+				</div>
+				<!--Creating a div for navigation bar-->
+				<div class="navigation">
+					<ul style="list-style-type: none;" class="flex">
+						<li><a href="../index.html" class="flex home_link" > Home </a></li>
+						<li><a href="../pages/Products.html" class="flex products_link" > Products </a></li>
+						<li><a href="../pages/Research.html" class="flex research_link" > Research </a></li>
+						<li><a href="../pages/Blog.html" class="flex blog_link" > Blog </a></li>
+						<li><a href="../pages/ContactUs.html" class="flex contactus_link"> Contact Us </a></li>
+
+					</ul>
+				</div>
+			</div>
+		</header>
+		<hr width="100%">
+		<!--Creating a section for main body-->
+		<main class="mainbody_container flex">
+			<!--Creating a section for keeping getintouch items-->
+			<section id="Get_in_Touch_container" class="flex">
+				<!--Creating a div for keeping text-->
+				<div id="getintouchtxt" class="flex">
+					<p> Get in Touch</p>
+				</div>
+
+				<!--Creating a div for keeping contact info-->
+				<div id="contactinfo_container" class="flex">
+					<!--Creating a div for location-->
+					<div class="contactdetails flex">
+						<!--Creating a div for location logo-->
+						<div class="contactdetails_logo flex">
+							<img src="../images/location.png">
+						</div>
+						<!--Creating a div for location details-->
+						<div class="contactdetails_txt flex">
+							<span> Location </span>
+							<p>
+								Literary Delights
+								<br>
+								City Center, Pashupati Road, Kathmandu 44605	
+							</p>
+						</div>
+					</div>
+					
+					<!--Creating a div for phone-->
+					<div class="contactdetails flex">
+						<!--Creating a div for phone logo-->
+						<div class="contactdetails_logo flex">
+							<img src="../images/phone.png">
+						</div>
+						<!--Creating a div for phone details-->
+						<div class="contactdetails_txt flex">
+							<span> Phone </span>
+							<p>
+								Literary Delights 
+								<br>
+								+977-9860926253
+								<br>
+								+01-4242358	
+							</p>
+						</div>
+					</div>
+
+					<!--Creating a div for email-->
+					<div class="contactdetails flex">
+						<!--Creating a div for email logo-->
+						<div class="contactdetails_logo flex">
+							<img src="../images/email.png">
+						</div>
+						<!--Creating a div for email details-->
+						<div class="contactdetails_txt flex">
+							<span> Mail </span>
+							<p>
+								Literary Delights
+								<br>
+								literarydelights0@gmail.com
+							</p>
+						</div>
+					</div>
+					
+					
+				</div>
+				
+			</section>
+			
+			<!--Creating a section for keeping form and some text-->
+			<section id="form_and_text_container" class="flex">
+				<!--Creating a div for keeping text-->
+				<div id="Reach_Out_To_Us" class="flex">
+					<span> Reach Out To Us! </span>
+					<p>
+						Send us your message through the form. We will be more than happy to help you.
+					</p>
+				</div>
+				<!--Creating a div for keeping form-->
+				<div id="form" class="flex"> 
+					<form name="messageform" onsubmit="validateform()">
+						<label> Name </label>
+						<br>
+						<input type="text" name="Name" id="Name" class="input_box" placeholder="Name">
+						<br>
+						<label> Email </label>
+						<input type="text" name="Email" id="Email" class="input_box" placeholder="Email">
+						<br>
+						<label> Phone Number </label>
+						<input type="phone" name="Phone" id="Phone" class="input_box" placeholder="Email">
+						<br>
+						<label> Message </label>
+						<br>
+						<textarea name="Message" id = "Message" class="input_box" style="height: 100px"> </textarea>
+						<input type="submit" name="Submit" value="Submit" id="Submit">
+
+					</form>	
+					<script type="text/javascript">
+						function validateform(){
+							var fname = document.forms["messageform"]["Name"].value;
+							var Email = document.forms["messageform"]["Email"].value;
+							var PhoneNumb = document.forms["messageform"]["Phone"].value;
+							var msg = document.forms["messageform"]["Message"].value;
+							if (fname=="" || Email==""|| PhoneNumb=="") {
+								alert("Please, Fill out the form");
+							} else {
+								alert("Thanks for your response!");
+							}
+						}
+					</script>
+				</div>
+			</section>
+			
+			
+		</main>
+			
+		<hr width="100%">
+		<footer>
+			<!--Creating a container for footer-->
+			<section class="footer_container flex">
+				<!--Creating a div for about us and socials-->
+				<div class="footer1_container flex">
+					<!--Creating a div for about us-->
+					<div class="aboutus_container flex">
+						<span> About Us </span>
+						<p>
+							Literary Delights is a passionate company driven by young leaders that aims to provide a large library of books of  different genres for its customers. Literary Delights started off as a small project of two college friends, which now aims to be the biggest online bookstore in Nepal.
+						</p>
+					</div>
+					<!--Creating a div for contactus-->
+					<div class="contact_container flex">
+						<span> Contact Us </span>
+						<p>
+							Tel No: +01-4242302 <br>
+							+977-9860926220 <br>
+							literary.delights@gmail.com
+						</p>
+					</div>
+					<!--Creating a div for socials-->
+					<div class="socialmedia_container flex">
+						<!--Creating a div for facebook-->
+						<div class = "footlogo">
+							<a href="https://www.facebook.com/profile.php?id=100079574041388" target="_blank"> 
+							<img src="../images/fb.png">
+							</a>	
+						</div>
+						<!--Creating a div for insta-->
+						<div class = "footlogo">
+							<a href="https://www.instagram.com/literarydelights0/" target="_blank"> 
+							<img src="../images/insta.png">
+							</a>	
+						</div>
+						<!--Creating a div for twitter-->
+						<div class = "footlogo">
+							<a href="https://twitter.com/LiteraryDeligh1" target="_blank"> 
+							<img src="../images/tweet.png">
+							</a>	
+						</div>
+
+					</div>
+				</div>
+
+				<!--Creating a div for copyrights-->
+				<div class="footer2_container flex">
+					Copyright © 2022 Literary Delights
+				</div>
+
+			</section>
+		</footer>
+	</div>
+</body>
+</html>
